@@ -12,7 +12,7 @@ import com.wssg.module.test.TestMainActivity
  * @date 2023/7/14
  * @Description:
  */
-@Route(path = TESTSERVICE, name = TESTSERVICE)
+@Route(path = TEST_SERVICE, name = TEST_SERVICE)
 class TestServerImpl: ITestService {
     override fun toTestPage(context: Context) {
         TestMainActivity.startActivity(context,"我传了个参数")

@@ -17,4 +17,4 @@ package com.wssg.module.test.server
  */
 
 //测试模块服务路径
-const val TESTSERVICE = "/test/service"
+const val TEST_SERVICE = "/test/service"

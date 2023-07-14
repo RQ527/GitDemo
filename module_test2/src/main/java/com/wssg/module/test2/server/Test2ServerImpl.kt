@@ -1,7 +1,6 @@
 package com.wssg.module.test2.server
 
 import android.content.Context
-import android.content.Intent
 import com.alibaba.android.arouter.facade.annotation.Route
 import com.wssg.lib.api.server.ITest2Service
 import com.wssg.module.test2.Test2MainActivity
@@ -14,9 +13,9 @@ import com.wssg.module.test2.Test2MainActivity
  * @Description:
  */
 @Route(path = TEST_SERVICE2)
-class Test2ServerImpl:ITest2Service {
+class Test2ServerImpl : ITest2Service {
     override fun toTest2Page(context: Context) {
-        context.startActivity(Intent(context,Test2MainActivity::class.java))
+        Test2MainActivity.startActivity(context)
     }
 
     override fun init(context: Context?) {
