@@ -49,9 +49,9 @@ apply from:'app_versions.gradle'
 
 ## 新建module模块
 
-![image-20230714233855507](C:\Users\冉思祥\AppData\Roaming\Typora\typora-user-images\image-20230714233855507.png)
+![image-20230714233855507](https://rq527-1310352304.cos.ap-chongqing.myqcloud.com/image-20230714233855507.png)
 
-![image-20230714234010142](C:\Users\冉思祥\AppData\Roaming\Typora\typora-user-images\image-20230714234010142.png)
+![image-20230714234010142](https://rq527-1310352304.cos.ap-chongqing.myqcloud.com/image-20230714234010142.png)
 
 新建module选Phone&Tablet，然后记得将包名里的下划线改为'.'
 
@@ -203,11 +203,11 @@ apply plugin:'com.android.application'表明此模块为application模块，作�
 
 用来设定java文件目录或者资源文件目录，manifest.srcFile声明注册文件的路径，运行时会寻找这个路径下的注册文件，java.srcDirs声明java/kotlin文件目录。之后在debug路径下新建你的DebugActivity并且在debug下的注册文件声明就行了： 
 
-![image-20230714234757660](简单版多模块指南.assets/image-20230714234757660.png)
+![image-20230714234757660](https://rq527-1310352304.cos.ap-chongqing.myqcloud.com/image-20230714234757660.png)
 
 将你的isDebug设为true，再在AS选择调试的模块：
 
-![image-20230714225439801](C:\Users\冉思祥\AppData\Roaming\Typora\typora-user-images\image-20230714225439801.png)
+![image-20230714225439801](https://rq527-1310352304.cos.ap-chongqing.myqcloud.com/image-20230714225439801.png)
 
 点击运行就会进入你的DebugActivity了，如项目所示。
 
@@ -221,13 +221,13 @@ androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
 因此你的这两个文件夹可以直接删除：
 
-![image-20230714225835341](C:\Users\冉思祥\AppData\Roaming\Typora\typora-user-images\image-20230714225835341.png)
+![image-20230714225835341](https://rq527-1310352304.cos.ap-chongqing.myqcloud.com/image-20230714225835341.png)
 
 直接在文件夹里删除即可。
 
 ## 新建lib模块
 
-![image-20230714234333856](C:\Users\冉思祥\AppData\Roaming\Typora\typora-user-images\image-20230714234333856.png)
+![image-20230714234333856](https://rq527-1310352304.cos.ap-chongqing.myqcloud.com/image-20230714234333856.png)
 
 lib选Android library，同样将包名中的下划线改为'.'。
 
