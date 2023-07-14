@@ -27,11 +27,7 @@ android {
         jvmTarget = '17'
     }
 }
-kapt{
-    arguments{
-        arg("AROUTER_MODULE_NAME",project.getName())
-    }
-}
+
 dependencies {
 
     implementation 'androidx.core:core-ktx:1.8.0'
@@ -39,5 +35,4 @@ dependencies {
     implementation 'com.google.android.material:material:1.5.0'
 
     api "com.alibaba:arouter-api:$versions.arouter_version"
-    kapt "com.alibaba:arouter-compiler:$versions.arouter_version"
 }
