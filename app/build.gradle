@@ -37,4 +37,5 @@ dependencies {
     implementation(project(":lib_utils"))
     implementation(project(":lib_api"))
     implementation(project(":module_test"))
+    implementation(project(":module_test2"))
 }
