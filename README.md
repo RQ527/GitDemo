@@ -366,3 +366,29 @@ kapt "com.alibaba:arouter-compiler:$versions.arouter_version"
 
 这里只需要依赖Arouter的注解处理器，Arouter就不用依赖了，因为在lib_api模块已经依赖了，api将依赖传递了。
 
+## 此项目模块间的通信
+
+需要通信的模块依赖lib_api：
+
+```groovy
+implementation(project(":lib_api"))
+```
+
+在lib_api模块里创建你的服务接口，继承自IProvider：
+
+![image-20230715002541166](https://rq527-1310352304.cos.ap-chongqing.myqcloud.com/image-20230715002541166.png)
+
+再在你的通信模块实现这个接口：
+
+![image-20230715002700511](https://rq527-1310352304.cos.ap-chongqing.myqcloud.com/image-20230715002700511.png)
+
+在类头部添加注解@Route注解声明路径，这样Arouter才找得到。路径名字自己保存在模块里面即可：
+![image-20230715002844010](https://rq527-1310352304.cos.ap-chongqing.myqcloud.com/image-20230715002844010.png)
+
+注意路径命名要规范，否则Arouter会找不到。
+
+然后在其他模块与之通信，比如我这里在App模块进入当前模块：
+
+![image-20230715003033583](https://rq527-1310352304.cos.ap-chongqing.myqcloud.com/image-20230715003033583.png)
+
+这里用的是封装的ServiceManger，很简单。这里示例了两种获取服务的方法，仅供参考。这样就完成了和Test模块的通信。
