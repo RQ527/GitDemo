@@ -14,3 +14,6 @@ dependencyResolutionManagement {
 }
 rootProject.name = "GitDemo"
 include ':app'
+include ':lib_utils'
+include ':module_test'
+include ':lib_api'
