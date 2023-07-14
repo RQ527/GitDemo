@@ -9,5 +9,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         Log.d("TAG", "onCreate: ")
+        ini()
+    }
+
+    private fun ini() {
+        TODO("Not yet implemented")
     }
 }
