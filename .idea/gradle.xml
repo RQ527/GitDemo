@@ -15,6 +15,7 @@
             <option value="$PROJECT_DIR$/lib_api" />
             <option value="$PROJECT_DIR$/lib_utils" />
             <option value="$PROJECT_DIR$/module_test" />
+            <option value="$PROJECT_DIR$/module_test2" />
           </set>
         </option>
       </GradleProjectSettings>

@@ -5,11 +5,11 @@ plugins {
 
 android {
     namespace 'com.wssg.lib.utils'
-    compileSdk 33
+    compileSdk app_sdk.compileSdk
 
     defaultConfig {
-        minSdk 24
-        targetSdk 33
+        minSdk app_sdk.minSdk
+        targetSdk app_sdk.targetSdk
     }
 
     buildTypes {

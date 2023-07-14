@@ -1,4 +1,4 @@
-package com.wssg.module.test.server
+package com.wssg.module.test2.server
 
 /**
  * ...
@@ -17,4 +17,4 @@ package com.wssg.module.test.server
  */
 
 //测试模块服务路径
-const val TESTSERVICE = "/test/service"
+const val TEST_SERVICE2 = "/test2/service"
