@@ -368,7 +368,7 @@ kapt "com.alibaba:arouter-compiler:$versions.arouter_version"
 
 如果出现了support包和androidx包冲突，在根目录的gradle.properties里面加这么两行代码：
 
-![image-20230715130027611](https://rq527-1310352304.cos.ap-chongqing.myqcloud.com/image-20230715130027611.png)
+![](https://rq527-1310352304.cos.ap-chongqing.myqcloud.com/20230715130856.png)
 
 android.useAndroidX=true表示Android插件使用androidx库而非support库
 
