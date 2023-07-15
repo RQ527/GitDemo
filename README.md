@@ -21,9 +21,9 @@ ext{
 
     //sdk版本
     app_sdk = [
-            compileSdk: 33,
+            compileSdk: 34,
             minSdk: 24,
-            targetSdk: 33,
+            targetSdk: 34,
     ]
 
     //三方库版本
