@@ -366,6 +366,14 @@ kapt "com.alibaba:arouter-compiler:$versions.arouter_version"
 
 这里只需要依赖Arouter的注解处理器，Arouter就不用依赖了，因为在lib_api模块已经依赖了，api将依赖传递了。
 
+如果出现了support包和androidx包冲突，在根目录的gradle.properties里面加这么两行代码：
+
+![image-20230715130027611](https://rq527-1310352304.cos.ap-chongqing.myqcloud.com/image-20230715130027611.png)
+
+android.useAndroidX=true表示Android插件使用androidx库而非support库
+
+android.enableJetifier=true表示Android插件会通过重写其二进制文件来自动迁移现有的第三方库，以使用AndroidX依赖项
+
 ## 此项目模块间的通信
 
 需要通信的模块依赖lib_api：
